@@ -1,0 +1,19 @@
+先安装python环境（官网自行下载，安装时选上add python_xxx to path）
+然后win+R并打开cmd
+输入pip install requests
+
+如果下载太慢在C:\Users\(用户名)处新建pip文件夹，然后在里面新建pip.ini
+并输入:
+[global]
+index-url = https://pypi.tuna.tsinghua.edu.cn/simple/
+[install]
+trusted-host = pypi.tuna.tsinghua.edu.cn
+保存再去下载requests
+
+在选课列表界面使用F12并选择网络
+然后刷新，找到selectCourseList，右键并复制为cURL(bash)
+在https://curlconverter.com/中粘贴，并在转换出的数据中找到json_data用来修改AutoSelectClass.py
+（具体操作见AutoSelectClass.py）
+在要选的具体课程界面同样操作找到getCourseinfoDetail，然后同样操作更新
+
+运行即可，请不要把time.sleep修改得太快，不然被抓不要说是我教的
