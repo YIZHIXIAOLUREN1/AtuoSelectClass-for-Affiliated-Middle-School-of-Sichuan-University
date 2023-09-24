@@ -13,6 +13,7 @@ trusted-host = pypi.tuna.tsinghua.edu.cn
 在选课列表界面使用F12并选择网络
 然后刷新，找到selectCourseList，右键并复制为cURL(bash)
 在https://curlconverter.com/中粘贴，并在转换出的数据中找到json_data用来修改AutoSelectClass.py
+并复制cookies粘贴到AutoSelectClass.py的cookies处 
 （具体操作见AutoSelectClass.py）
 在要选的具体课程界面同样操作找到getCourseinfoDetail，然后同样操作更新
 
