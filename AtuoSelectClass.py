@@ -59,7 +59,7 @@ def task(openCourseInfoId,openCourseSetId,courseId,kid):
 
 def run():
     ke = [[6253,775,7597,1],#请自行更新数据，对应json_data
-          [6277,776,7621,2],#最后一位用来输出是哪个课程
+          [6277,776,7621,2],#最后一位用来输出是哪个课程，可以随便乱填
           ]
     with ThreadPoolExecutor(2) as t:
         for k in ke:
